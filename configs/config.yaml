@@ -1,0 +1,17 @@
+kb_root: "kb"
+
+index:
+  include_extensions:
+    - ".md"
+    - ".pdf"
+    - ".docx"
+    - ".txt"
+
+info_file_patterns:
+  - "admin_email.txt"
+  - "wifi_ssid.txt"
+  - "*.info"
+
+output:
+  default_root: "output"
+  allow_binary_output: true
