@@ -1,0 +1,26 @@
+[
+  {
+    "type": "binary",
+    "path": "C:\\VS Projects\\KnowMore\\KnowMore\\kb\\ickb\\files\\OneDrive Online (web) Guide v1.0.pdf",
+    "metadata": {
+      "title": "ICKB - Accessing OneDrive Online (web) Guide v1.0",
+      "tags": [
+        "onedrive",
+        "shared files",
+        "teacher",
+        "all staff",
+        "microsoft online",
+        "microsoft 365",
+        "office 365"
+      ],
+      "audience": "all staff",
+      "os": [
+        "Windows",
+        "Chromebook",
+        "macOS"
+      ],
+      "site": "ICKB",
+      "last_updated": "2024-12-09"
+    }
+  }
+]
