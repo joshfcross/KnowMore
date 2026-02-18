@@ -15,6 +15,16 @@ def load_sidecar_metadata(file_path: Path):
         return yaml.safe_load(meta_path.read_text(encoding="utf-8"))
     return {}
 
+def make_json_safe(obj):
+    if isinstance(obj, dict):
+        return {k: make_json_safe(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [make_json_safe(v) for v in obj]
+    if isinstance(obj, (int, float, str, bool)) or obj is None:
+        return obj
+    # Convert dates, datetimes, Path, etc. to strings
+    return str(obj)
+
 def index_kb():
     records = []
 
@@ -46,8 +56,9 @@ def index_kb():
 
         # 3. Info files (.txt etc.) ignored at index level ----------
 
+    safe_records = make_json_safe(records)
     INDEX_PATH.parent.mkdir(exist_ok=True)
-    INDEX_PATH.write_text(json.dumps(records, indent=2), encoding="utf-8")
+    INDEX_PATH.write_text(json.dumps(safe_records, indent=2), encoding="utf-8")
 
     print(f"Indexed {len(records)} items into {INDEX_PATH}")
 
