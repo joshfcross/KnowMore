@@ -1,7 +1,20 @@
+"""
+ * Project:        KnowMore
+ * File:           ui_streamlit.py
+ * Description:    Streamlit UI for the KnowMore document fetcher application
+ * Author:         Josh Cross
+ * Created:        18/02/2026
+ * Last Modified:  18/02/2026 by Josh Cross
+ *
+""" 
+
+# Public modules
 import streamlit as st
 from pathlib import Path
 import json
 
+# Repository modules
+from docfetcher.ui_helpers import render_pdf
 from docfetcher.renderer import render_document
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -49,8 +62,12 @@ else:
         st.write("*Metadata:*")
         st.json(selected_record["metadata"])
 
-        # Render Button
+        # Render inline PDF preview if it's a PDF
+        output_path = selected_record["path"]
+        if output_path.lower().endswith(".pdf"):
+            render_pdf(output_path)
 
+        # Render Button
         if st.button("📄 Export Document"):
             out_dir = ROOT / "output" / "ui_export"
             result = render_document(selected_record, out_dir)

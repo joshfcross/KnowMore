@@ -1,3 +1,14 @@
+"""
+ * Project:        KnowMore
+ * File:           renderer.py
+ * Description:    Document rendering functions for the KnowMore document fetcher application
+ * Author:         Josh Cross
+ * Created:        18/02/2026
+ * Last Modified:  18/02/2026 by Josh Cross
+ *
+""" 
+
+# Public modules
 import shutil
 from pathlib import Path
 import frontmatter
