@@ -4,7 +4,7 @@ __pycache__/
 *.pyc
 
 # App artifacts
-data/index.json
+data/
 output/
 .streamlit/
 
