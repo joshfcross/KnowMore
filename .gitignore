@@ -4,6 +4,7 @@ __pycache__/
 *.pyc
 
 # App artifacts
+kb/
 data/
 output/
 .streamlit/

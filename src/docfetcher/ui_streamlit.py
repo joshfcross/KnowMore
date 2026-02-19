@@ -59,13 +59,13 @@ else:
     if choice and choice != "(Select)":
         selected_record = filtered_records[titles.index(choice)]
 
-        st.write("*Metadata:*")
-        st.json(selected_record["metadata"])
-
         # Render inline PDF preview if it's a PDF
         output_path = selected_record["path"]
         if output_path.lower().endswith(".pdf"):
             render_pdf(output_path)
+        else:
+            st.write("*Metadata:*")
+            st.json(selected_record["metadata"])
 
         # Render Button
         if st.button("📄 Export Document"):
