@@ -5,7 +5,6 @@ src/docfetcher/__pycache__/
 *.egg-info/
 
 # App artifacts
-kb/
 data/
 output/
 .streamlit/
