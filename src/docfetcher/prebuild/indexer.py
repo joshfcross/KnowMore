@@ -13,8 +13,8 @@ import yaml
 from pathlib import Path
 import json
 
-KB_ROOT = Path(__file__).resolve().parents[2] / "kb"
-INDEX_PATH = Path(__file__).resolve().parents[2] / "data" / "index.json"
+KB_ROOT = Path(__file__).resolve().parents[3] / "kb"
+INDEX_PATH = Path(__file__).resolve().parents[3] / "data" / "index.json"
 
 SUPPORTED_DOCS = {".md", ".pdf", ".docx", ".txt"}
 
