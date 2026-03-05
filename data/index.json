@@ -1,0 +1,82 @@
+[
+  {
+    "type": "markdown",
+    "path": "C:\\VS Projects\\KnowMore\\KnowMore\\kb\\customer1\\portal.md",
+    "metadata": {}
+  },
+  {
+    "type": "markdown",
+    "path": "C:\\VS Projects\\KnowMore\\KnowMore\\kb\\customer2\\portal.md",
+    "metadata": {}
+  },
+  {
+    "type": "markdown",
+    "path": "C:\\VS Projects\\KnowMore\\KnowMore\\kb\\customer2\\docs\\onboarding.md",
+    "metadata": {
+      "title": "Customer2 Onboarding Runbook",
+      "site": "customer2",
+      "tags": [
+        "onboarding",
+        "runbook",
+        "howto"
+      ],
+      "owner": "IT",
+      "last_reviewed": "2026-02-20",
+      "priority": "P2"
+    }
+  },
+  {
+    "type": "binary",
+    "path": "C:\\VS Projects\\KnowMore\\KnowMore\\kb\\customer2\\files\\Design.pdf",
+    "metadata": {
+      "title": "Design Document for Customer2",
+      "tags": [
+        "customer2",
+        "design",
+        "document"
+      ],
+      "os": "Windows 11",
+      "site": "customer2.com"
+    }
+  },
+  {
+    "type": "binary",
+    "path": "C:\\VS Projects\\KnowMore\\KnowMore\\kb\\customer2\\info\\info.txt",
+    "metadata": {}
+  },
+  {
+    "type": "markdown",
+    "path": "C:\\VS Projects\\KnowMore\\KnowMore\\kb\\customer1\\docs\\onboarding.md",
+    "metadata": {
+      "title": "Customer1 Onboarding Runbook",
+      "site": "customer1",
+      "tags": [
+        "onboarding",
+        "runbook",
+        "howto"
+      ],
+      "owner": "IT",
+      "last_reviewed": "2026-02-20",
+      "priority": "P2"
+    }
+  },
+  {
+    "type": "binary",
+    "path": "C:\\VS Projects\\KnowMore\\KnowMore\\kb\\customer1\\files\\Design.pdf",
+    "metadata": {
+      "title": "Design Document for Customer1",
+      "tags": [
+        "customer1",
+        "design",
+        "document"
+      ],
+      "os": "Windows 11",
+      "site": "customer1.com"
+    }
+  },
+  {
+    "type": "binary",
+    "path": "C:\\VS Projects\\KnowMore\\KnowMore\\kb\\customer1\\info\\info.txt",
+    "metadata": {}
+  }
+]
