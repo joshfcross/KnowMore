@@ -1,8 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "docfetcher"
 version = "0.1.0"
+description = "KnowMore document fetcher"
+authors = [{ name = "Josh Cross" }]
+readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["pyyaml", "python-frontmatter"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
