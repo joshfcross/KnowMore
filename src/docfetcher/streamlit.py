@@ -5,7 +5,7 @@ File:           streamlit.py
 Description:    Streamlit UI for the KnowMore document fetcher application
 Author:         Josh Cross
 Created:        18/02/2026
-Last Modified:  26/02/2026 by Josh Cross
+Last Modified:  05/03/2026 by Josh Cross
 """
 
 #Public Libraries
@@ -48,7 +48,3 @@ elif view == "site_browse":
     show_site_browse(INDEX)
 elif view == "preview":
     show_preview(INDEX)
-
-
-
-

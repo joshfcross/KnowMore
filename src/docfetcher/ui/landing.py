@@ -5,7 +5,7 @@
  * Description:    Landing page UI for the KnowMore document fetcher application
  * Author:         Josh Cross
  * Created:        26/02/2026
- * Last Modified:  26/02/2026 by Josh Cross
+ * Last Modified:  05/03/2026 by Josh Cross
  *
 """
 
@@ -31,6 +31,7 @@ def show_landing_page():
     """)
     
     if st.button("Search Documents"):
+        state.set_selected_site(None)  # Clear any previously selected site
         state.set_view("search")
     elif st.button("Select Sites"):
         state.set_view("site_select")
