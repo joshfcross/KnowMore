@@ -1,6 +1,2 @@
- - Gives a set of simple selection choices to users
- - Maintains an indexed database of documents
- - References the answers submitted to heat map a best result list
- - Returns the list of documents/references to the user
-
- Et voila!
+To run, cd into project root and run: 
+ - pip install -e .
