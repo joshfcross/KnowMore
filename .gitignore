@@ -1,0 +1,16 @@
+# Python
+src/docfetcher/__pycache__/
+src/docfetcher/ui/__pycache__/
+.venv/
+*.pyc
+*.egg-info/
+
+# App artifacts
+data/
+output/
+.streamlit/
+
+# Build
+build/
+dist/
+*.spec
