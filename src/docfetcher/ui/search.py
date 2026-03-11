@@ -20,7 +20,7 @@ def show_search_page(INDEX: list):
     """)
     
     
-# Current site selection from global state (may be None if user chose "Search Documents")
+    # Current site selection from global state (may be None if user chose "Search Documents")
     selected_site_state = state.get_selected_site()
 
     # Search input

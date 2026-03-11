@@ -5,16 +5,15 @@
  * Description:    Landing page UI for the KnowMore document fetcher application
  * Author:         Josh Cross
  * Created:        26/02/2026
- * Last Modified:  05/03/2026 by Josh Cross
+ * Last Modified:  11/03/2026 by Josh Cross
  *
 """
 
 import streamlit as st
 import docfetcher.state as state
 
-st.title("📚 KnowMore - Document Fetcher")
-
 def show_landing_page():
+    st.title("📚 KnowMore - Document Fetcher")
     st.markdown("""
     ## Welcome to KnowMore! 📚
 
@@ -31,11 +30,14 @@ def show_landing_page():
     """)
     
     if st.button("Search Documents"):
-        state.set_selected_site(None)  # Clear any previously selected site
+        state.set_selected_site(None)
         state.set_view("search")
-    elif st.button("Select Sites"):
+        st.stop()
+
+    if st.button("Select Sites"):
         state.set_view("site_select")
-    
+        st.stop()
+
     st.markdown("""
     **Need Help?**
     - Check out our [documentation](https://knowmore-docs.example.com) for detailed guides and FAQs.
