@@ -5,7 +5,7 @@ File:           streamlit.py
 Description:    Streamlit UI for the KnowMore document fetcher application
 Author:         Josh Cross
 Created:        18/02/2026
-Last Modified:  26/02/2026 by Josh Cross
+Last Modified:  05/03/2026 by Josh Cross
 """
 
 #Public Libraries
@@ -38,17 +38,17 @@ if "view" not in st.session_state:
 
 # Determine which view to show based on the current state
 view = get_view()
-if view == "landing":
-    show_landing_page()
-elif view == "search":
-    show_search_page(INDEX)
-elif view == "site_select":
-    show_site_select(INDEX)
-elif view == "site_browse":
-    show_site_browse(INDEX)
-elif view == "preview":
-    show_preview(INDEX)
 
-
-
-
+match view:
+    case "landing":
+        show_landing_page()
+    case "search":
+        show_search_page(INDEX)
+    case "site_select":
+        show_site_select(INDEX)
+    case "site_browse":
+        show_site_browse(INDEX)
+    case "preview":
+        show_preview(INDEX)
+    case _:
+        st.error(f"Unknown view: {view}")
